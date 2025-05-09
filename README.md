@@ -14,26 +14,26 @@
     <h3>Aspectos Técnicos:</h3>
 </div>
 
-<div class="container my-2">
+<div class="container">
     <h4>API_KEY:</4>
         <li></li>
 </div>
 
-<div class="container my-2">
+<div class="container">
     <h4>Library:</4>
         <li>pip install virtualenv</li>
         <li>pip install tkinter</li>
         <li>pip install tkcalendar</li>
 </div>
 
-<div class="container my-2">
+<div class="container">
     <h4>Virtual environment:</4>
         <li>\venv\Scripts\activate</li>
 </div>
 </section>
         
 <footer>
-<div class="container my-2">
+<div class="container">
     <h4>Runserver:</h4>
          <p>Para inicializar el widget, se debe ingresar a la terminal de VSCode y usar el comando :</p> 
             <li>python widget.py</li>
