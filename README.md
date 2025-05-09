@@ -33,9 +33,8 @@
 </section>
         
 <footer>
-<div class="container">
-    <h4>Runserver:</h4>
-         <li>En la terminal de VSCode usar el siguiente comando: <b>python widget.py</b></li> 
-           
-</div>
+    <div class="container">
+        <h4>Runserver:</h4>
+             <li>En la terminal de VSCode usar el siguiente comando: <b>python widget.py</b></li>        
+    </div>
 </footer>
