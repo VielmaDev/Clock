@@ -35,7 +35,7 @@
 <footer>
 <div class="container my-2">
     <h4>Runserver</h4>
-         <li>Para inicializar el widget, se debe ingresar a la terminal de VSCode y usar el comando: </li> 
-            <ol><br><mark> python widget.py </mark></ol>
+         <p>Para inicializar el widget, se debe ingresar a la terminal de VSCode y usar el comando: </p> 
+            <li><br><mark> python widget.py </mark></li>
 </div>
 </footer>
