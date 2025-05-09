@@ -1,6 +1,6 @@
 <caption>
     <div class="container" style="text-aling:center";>
-        <h1>Widget v-1.5</h1>
+        <h1>Widget</h1>
     </div>
 </caption>
 
@@ -35,7 +35,7 @@
 <footer>
 <div class="container">
     <h4>Runserver:</h4>
-         <p>En la terminal de VSCode usar el siguiente comando :</p> 
-            <li>python widget.py</li>
+         <li>En la terminal de VSCode usar el siguiente comando: <b>python widget.py</b></li> 
+           
 </div>
 </footer>
