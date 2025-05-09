@@ -6,8 +6,8 @@
 
 <section>
 <div class="container">
-    <p></p>
-    <p></p>
+    <p>Este  widget para desktop (Windows)  indica fecha y hora,  N° del día, así como, información sobre días feriados (nacionales e internacionales).</p>
+    <p>🚨 Aun se encuentra  en proceso de desarrollo 🚧</p>
 </div>
 
 <div class="container">
