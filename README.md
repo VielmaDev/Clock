@@ -15,19 +15,19 @@
 </div>
 
 <div class="container">
-    <h4>URL API:</4>
+    <h4>API:</h4>
         <li></li>
 </div>
 
 <div class="container">
-    <h4>Library:</4>
+    <h4>Library:</h4>
         <li>pip install virtualenv</li>
         <li>pip install tkinter</li>
         <li>pip install tkcalendar</li>
 </div>
 
 <div class="container">
-    <h4>Virtual environment:</4>
+    <h4>Virtual environment:</h4>
         <li>\venv\Scripts\activate</li>
 </div>
 </section>
