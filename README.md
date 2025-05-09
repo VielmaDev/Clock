@@ -1,6 +1,6 @@
 <caption>
     <div class="container" style="text-aling:center";>
-        <h1>Widget v-1.0</h1>
+        <h1>Widget v-1.5</h1>
     </div>
 </caption>
 
