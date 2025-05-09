@@ -21,10 +21,9 @@
 
 <div class="container my-2">
     <h4>Library</4>
-        <li>pip install flet</li>
         <li>pip install virtualenv</li>
-        <li>pip instalar google-generativeai</li>
-        <li>pip instalar python-dotenv</li>
+        <li>pip install tkinter</li>
+        <li>pip install tkcalendar</li>
 </div>
 
 <div class="container my-2">
@@ -36,6 +35,6 @@
 <footer>
 <div class="container my-2">
     <h4>Runserver</h4>
-         <li>Para inicializar el widget, se debe ingresar a la terminal de VSCode y usar el comando: <mark> python widget.py </mark></li> 
+         <li>Para inicializar el widget, se debe ingresar a la terminal de VSCode y usar el comando: <br><mark> python widget.py </mark></li> 
 </div>
 </footer>
