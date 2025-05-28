@@ -5,18 +5,10 @@
 #-*- coding: utf -8-*-
 
 import tkinter as tk
-from tkinter import ttk  #Carga ttk (para widgets nuevos 8.5+)
-from tkinter import * # Carga módulo tk (widgets estándar)
-from tkinter import ttk  #Carga ttk (para widgets nuevos 8.5+)
+from tkinter import ttk  #Módulo ttk para widgets nuevos 8.5+
+from tkinter import * # Módulo tk widgets estándar
 
-from tkinter import messagebox
-from time import strftime
-from tkcalendar import Calendar
-
-
-#Importando gestor de DB y modulos que componen el paquete
-#import Modulo_acceso
-#import Modulo_administrador
+from time import strftime #Librería para formato hora
 
 #Interfaz UI
 class appWidget(tk.Tk):
@@ -25,77 +17,55 @@ class appWidget(tk.Tk):
     
         super().__init__(*args, **kwargs)
 
-        self.title ('Widget v-1.5')
-        self.geometry('500x187+450+220') # Estableciendo tamano de la ventana
+        self.title ('TIME ⏰')
+        self.geometry('350x180+450+220') # Estableciendo tamano de la ventana
         self.config(bg='Black')
-        self.resizable(0,0) # No permite modificar la dimensión de la ventana     
-        self.update() # Actualiza la pantalla antes de cargar en sistema
-        
+        self.resizable(0,0) # No permite modificar la dimensión de la ventana 
 
-        #Formato hora
-        self.FORMATO_HORA= '%H: %M: %S %p'
+        #Hora actual
+        self.FORMATO_HORA= '%H:%M:%S %p'    
 
         #Formato fecha
-        self.FORMATO_FECHA= '%d-%m-%Y'
         self.FORMATO_DIA='%d'
         self.FORMATO_MES='%m'
         self.FORMATO_AÑO='%Y'
+        self.FORMATO_FECHA= '%d / %m / %Y'
         self.FORMATO_NOMBRE_DIA='%A'
 
          #Formato n° día
         self.FORMATO_N_DIA= '%j'
         
         #Variables 
-        self.fecha_hoy=strftime(self.FORMATO_FECHA)
-        self.numero_del_dia= strftime(self.FORMATO_N_DIA)
+        self.nombre_dia=strftime(self.FORMATO_NOMBRE_DIA)
         self.fecha_dia=strftime(self.FORMATO_DIA)
         self.fecha_mes=strftime(self.FORMATO_MES)
         self.fecha_año=strftime(self.FORMATO_AÑO)
-        self.nombre_dia=strftime(self.FORMATO_NOMBRE_DIA)
+        self.fecha_hoy=strftime(self.FORMATO_FECHA)
+        self.numero_del_dia= strftime(self.FORMATO_N_DIA)
        
         #Posicionamiento de elementos
-        self.etiqueta_hora=ttk.Label(self, font=('Verdana', 20, 'bold'), background= 'black', foreground='White')
-        self.etiqueta_hora.place(x=141, y=20)
+        self.etiqueta_hora=ttk.Label(self, font=('Comic Sans MS', 27, 'bold'), background= 'black', foreground='White')
+        self.etiqueta_hora.place(x=55, y=18)
 
-        self.fecha_actual=ttk.Label(self, text= str(self.nombre_dia)+ ': ' +str(self.fecha_hoy) + ' | Día n°: ' + str(self.numero_del_dia), font=('Verdana', 10, 'bold'), background='Black', foreground='Yellow')
-        self.fecha_actual.place(x=116, y=60)
+        self.dia_actual=ttk.Label(self, text= str(self.nombre_dia), font=('Verdana', 16, 'bold'), background='Black', 
+        foreground='Blue')
+        self.dia_actual.place(x=100, y=70)
 
-        self.scroll=tk.Scrollbar(self, orient=tk.VERTICAL)
-        self.listbox=tk.Listbox(self, width=60, height= 4, background='Black', yscrollcommand= self.scroll.set,  font=('Verdana', 9))
-        self.scroll.configure(command=self.listbox.yview)
-        self.listbox.place(x=8, y=90)
+        self.fecha_actual=ttk.Label(self, text= str(self.fecha_hoy), font=('Verdana', 14, 'bold'), background='Black', 
+        foreground='Yellow')
+        self.fecha_actual.place(x=91, y=105)
 
-        self.patente=ttk.Label(self, text='©2025 / By Vielmadev', font=('Comic', 8, 'bold'), background='Black', foreground='Green')
-        self.patente.place(x=190, y=160)
+        self.n_dia=ttk.Label(self, text= 'Día n° : ' + str(self.numero_del_dia), font=('Verdana', 12, 'bold'), background='Black', 
+        foreground='Yellow')
+        self.n_dia.place(x=123, y=140)
 
-        self.hora()
+        self.hora() #Llamanda a metodo hora
 
-
-    #Método hora actual 
+        #Método hora actual 
     def hora(self):
-
-            self.hora_actual=strftime(self.FORMATO_HORA)
-            self.etiqueta_hora.config(text=self.hora_actual)
-            self.etiqueta_hora.after(1000, self.hora)
-
-    #Método calendario 
-    def calendarios(self): 
-
-        self.calendario= Toplevel()
-        self.calendario.geometry('250x180+574+230')
-        self.calendario.resizable(0,0)
-        self.calendario.title('Calendario')
-        self.cal=Calendar(self.calendario, selectmode='day', year=int(self.fecha_año), month=int(self.fecha_mes), day=int(self.fecha_dia))
-        self.cal.place(x=0, y=0)
-        self.cal.focus_set()
-
-        self.calendario.transient(master=self)
-        self.calendario.grab_set()
-        self.wait_window(self.calendario)
-
-    #def acceso(self):
-        #Modulo_acceso.acceso()
-
+        self.hora_actual=strftime(self.FORMATO_HORA)
+        self.etiqueta_hora.config(text=self.hora_actual)
+        self.etiqueta_hora.after(1000, self.hora)
 
 def main():
     # Instanciación de la appWidget
