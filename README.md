@@ -1,6 +1,6 @@
 <caption>
     <div class="container" style="text-aling:center";>
-        <h1>Widget-Timer ⏰</h1>
+        <h1>Widget-Time⏰</h1>
     </div>
 </caption>
 
