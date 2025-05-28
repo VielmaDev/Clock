@@ -1,8 +1,13 @@
 <caption>
     <div class="container" style="text-aling:center";>
-        <h1>Widget</h1>
+        <h1>Widget-Timer ⏰</h1>
     </div>
 </caption>
+
+<section>
+<div class="container">
+    <img src="https://github.com/user-attachments/assets/41e8f617-31e7-4f6a-ba19-8865619f7e24">
+</div>   
 
 <section>
 <div class="container">
