@@ -11,8 +11,7 @@
 
 <section>
 <div class="container">
-    <p>Este  widget para desktop (Windows)  indica fecha y hora,  N° del día, así como, información sobre feriados (nacionales e internacionales).</p>
-    <p>🚨 Aun se encuentra  en proceso de desarrollo 🚧</p>
+    <p>Este widget básico para desktop se encarga de indicar hora, día de la semana, fecha y día del año</p>
 </div>
 
 <div class="container">
