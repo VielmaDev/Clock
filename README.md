@@ -11,7 +11,7 @@
 
 <section>
 <div class="container">
-    <p>Este widget para desktop es un reloj básico y nos indica hora actual, día de la semana, fecha y día del año.</p>
+    <p>Este widget para desktop es un reloj básico y nos proporciona la hora actual, el día de la semana, la fecha y el día del año.</p>
 </div>
 
 <div class="container">
